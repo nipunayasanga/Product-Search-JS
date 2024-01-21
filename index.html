@@ -1,30 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-    <title>JavaScript product filter</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+ <!-- Document title -->
+ <title>JavaScript product filter</title>
 
-    <link rel="stylesheet" href="style.css">
+ <!-- Font Awesome stylesheet for icons -->
+ <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+ <!-- External stylesheet for custom styling -->
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="container">
-        <form>
-            <i class="fas fa-search"></i>
-            <input type="text" name="" id="search-item" placeholder="search product"
-            onkeyup="search()">
-        </form>
+ <!-- Main container section -->
+ <section class="container">
 
-        <div class="product-list" id="product-list">
+     <!-- Search form -->
+     <form>
+         <!-- Search icon using Font Awesome -->
+         <i class="fas fa-search"></i>
+         
 
-            <div class="product">
-                <img src="material/tshirt.png" alt="">
-                <div class="p-details">
-                    <h2>Tshirt for Everyone</h2>
-                    <h3>$25</h3>
-                </div>
+         <!--onkeyup attribute is used to trigger the search() function 
+            whenever a key is released in the search input field. 
+            This function is responsible for dynamically filtering and displaying products 
+            based on the user's input.Search input field with onkeyup event calling the 'search()' function -->
+            
+         <input type="text" name="" id="search-item" placeholder="search product" onkeyup="search()">
+     </form>
 
-            </div>
+     <!-- Product list container -->
+     <div class="product-list" id="product-list">
+
+         <!-- Sample product entry -->
+         <div class="product">
+             <!-- Product image -->
+             <img src="material/tshirt.png" alt="">
+             
+             <!-- Product details -->
+             <div class="p-details">
+                 <!-- Product name -->
+                 <h2>Tshirt for Everyone</h2>
+                 
+                 <!-- Product price -->
+                 <h3>$25</h3>
+             </div>
+         </div>
+
+         <!-- Repeat the above structure for each product entry -->
+
             <div class="product">
                 <img src="material/jordan.png" alt="">
                 <div class="p-details">
