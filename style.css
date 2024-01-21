@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     font-family: sans-serif;
 }
 
@@ -26,7 +26,8 @@ body {
     border-radius: 15px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
     padding: 20px;
-    overflow-y: scroll;
+    overflow-y: auto; /* Set to auto to allow scrolling within the container */
+    
 }
 
 /* Hide the scrollbar in the container */
@@ -96,4 +97,49 @@ body {
 .product .p-details h3 {
     font-size: 20px;
     color: #1d1d1d;
+}
+
+/* Styles for the search form */
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust the width as needed */
+    padding-bottom: 10px; /* Add padding to the bottom */
+}
+
+/* Styles for the search icon using Font Awesome */
+.search i {
+    position: absolute;
+    left: 10px;
+    top: 45%;
+    transform: translateY(-50%);
+    color: #555; /* Adjust the color as needed */
+}
+
+/* Styles for the search input field */
+.search input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 30px; /* Adjust padding-left to accommodate the icon */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect on the search input field */
+.search input:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect on the search input field */
+.search input:focus {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.search01{
+    max-width: fit-content;
 }

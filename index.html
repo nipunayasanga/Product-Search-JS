@@ -8,22 +8,26 @@
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="search01">
+    <form class="search">
+        <!-- Search icon using Font Awesome -->
+        <i class="fas fa-search"></i>
+        
+    
+
+        <!--onkeyup attribute is used to trigger the search() function 
+           whenever a key is released in the search input field. 
+           This function is responsible for dynamically filtering and displaying products 
+           based on the user's input.Search input field with onkeyup event calling the 'search()' function -->
+           
+        <input type="text" name="" id="search-item" placeholder="search product" onkeyup="search()">
+    </form>
+</div>
  <!-- Main container section -->
  <section class="container">
 
      <!-- Search form -->
-     <form>
-         <!-- Search icon using Font Awesome -->
-         <i class="fas fa-search"></i>
-         
 
-         <!--onkeyup attribute is used to trigger the search() function 
-            whenever a key is released in the search input field. 
-            This function is responsible for dynamically filtering and displaying products 
-            based on the user's input.Search input field with onkeyup event calling the 'search()' function -->
-            
-         <input type="text" name="" id="search-item" placeholder="search product" onkeyup="search()">
-     </form>
 
      <!-- Product list container -->
      <div class="product-list" id="product-list">
