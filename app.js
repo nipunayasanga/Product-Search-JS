@@ -33,3 +33,11 @@ const search = () => {
         }
     }
 }
+
+const myButton = document.getElementById("clickme");
+myButton.addEventListener("click", doSomthing);
+
+function doSomthing(){
+    alert("button click");
+
+}
